@@ -1,0 +1,22 @@
+h1{
+color: white; 
+text-align: center;
+background-color:#2953b4;
+font-weight: 500;
+
+
+}
+.d1{
+background-color: white;
+text-align: center;
+color: rgba(0, 0, 0, 0.832);
+
+}
+#slack{
+color: rgb(6, 1, 11);
+background-color:rgb(71, 192, 178);
+font-weight: 500;
+font-size: 25px;
+
+
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket.com</title>
+    <style>
+      body {
+        margin: -5px;
+      }
+      #type {
+        padding-right: 52rem;
+      }
+      #row3 {
+        display: flex;
+        justify-content: center;
+        column-gap: 11.5rem;
+      }
+      #row5 {
+        margin: -20px;
+        display: flex;
+        justify-content: end;
+      }
+      #businfo {
+        border: 1px solid black;
+        padding: 20px;
+        margin: 15px;
+      }
+      #row4 {
+        display: flex;
+        justify-content: center;
+        column-gap: 20rem;
+      }
+      #start-price-container {
+        display: none;
+      }
+      #avg-rating-container {
+        border: none;
+        border: 1px rgb(55, 184, 124);
+        background-color: rgb(55, 184, 124);
+        border-radius: 6px;
+        font-size: 10px;
+        color: azure;
+        padding: 5px;
+        padding-right: 7px;
+        display: none;
+      }
+
+      button {
+        font-size: 12px;
+        border: none;
+        background-color: rgb(217, 78, 85);
+        padding: 10px;
+        color: white;
+        padding: 10px 20px 10px 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      #row2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="businfo">
+      <div id="row1">
+        <img src="" id="img-src" />
+      </div>
+      <div id="row2">
+        <p><b id="bus-name"></b></p>
+        <p><b id="start-Time"></b></p>
+        <p id="duration"></p>
+        <p><b id="endTime"></b></p>
+        <p id="avg-rating-container">
+          <i class="fa-solid fa-star"><span id="avgRating"></span></i>
+        </p>
+        <p id="start-price-container">
+          Starts from <br />INR<b><span id="startingPrice"></span></b>
+        </p>
+      </div>
+      <div id="row3">
+        <p id="type"></p>
+        <p id="date"></p>
+      </div>
+      <div id="row4">
+        <p id="source"></p>
+        <p id="destinattion"></p>
+      </div>
+      <div id="row5">
+        <button onclick="viewDetails()">VIEW DETAILS</button>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    var bus = {
+      name: "Sri Durgamba Travels",
+      imgsrc:
+        "https://s3.rdbuz.com/Images/webplatform/india/primo/primoLogo.svg",
+      type: "A/C Sleeper (2+1)",
+      date: "23-Sep",
+      startTime: "21:30",
+      endTime: "09:35",
+      duration: "12h 05m",
+      avgRating: 4.7,
+      startingPrice: 3499,
+      source: "Kachhiguda",
+      destinattion: "Mumbai",
+    };
+    function viewDetails() {
+      document.getElementById("img-src").src = bus.imgsrc;
+      document.getElementById("bus-name").innerHTML = bus.name;
+      document.getElementById("start-Time").innerHTML = bus.startTime;
+      document.getElementById("duration").innerHTML = bus.duration;
+      document.getElementById("endTime").innerHTML = bus.endTime;
+      document.getElementById("avgRating").innerHTML = bus.avgRating;
+      document.getElementById("startingPrice").innerHTML = bus.startingPrice;
+      document.getElementById("type").innerHTML = bus.type;
+      document.getElementById("date").innerHTML = bus.date;
+
+      document.getElementById("source").innerHTML = bus.source;
+      document.getElementById("destinattion").innerHTML = bus.name;
+      document.getElementById("avg-rating-container").style.display = "block";
+      document.getElementById("start-price-container").style.display = "block";
+    }
+  </script>
+
+  <script
+    src="https://kit.fontawesome.com/8fe93764a7.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

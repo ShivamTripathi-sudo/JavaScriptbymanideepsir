@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+    <link rel="icon" href="../v.png" />
+    <style>
+      .c:hover {
+        background-color: blueviolet;
+        transform: scale(1.1);
+      }
+      .c {
+        color: white;
+        background-color: rgb(2, 39, 39);
+      }
+      #b {
+        background-color: rgb(111, 207, 207);
+      }
+      P {
+        font-size: 20px;
+      }
+      #a {
+        padding: 10px 20px;
+        border-color: 1 px black;
+        border-radius: 8px;
+        background-color: blue;
+        color: white;
+        margin-left: 50px;
+        transition-property: background-color, font size;
+        transition-duration: 1ms;
+        /* transition-delay: 1s; */
+        transition-timing-function: ease-in-out;
+      }
+      #a:hover {
+        transform: scale(1.1);
+        background-color: rgb(201, 33, 33);
+      }
+      #b {
+        border: 1px solid rgb(12, 8, 8);
+        margin-top: 50px;
+        width: 400px;
+        padding: 20px 20px;
+        margin-left: 50px;
+      }
+      #b:hover {
+        /* transform: translate(20px, 10px); */
+        /* transform: rotate(20deg); */
+        /* transform: rotate(-20deg); */
+        transform: scale(1.1);
+        /* transform: skew(-10deg); */
+        /* transform: skewX(10deg); */
+      }
+    </style>
+  </head>
+  <body>
+    <button id="a">Download pdf</button>
+    <div id="b">
+      <h2>Devops Training</h2>
+
+      <span><i class="fa-regular fa-clock"></i>2 Monthes</span>
+      <span> <i class="fa fa-code"></i>5 Live Project</span>
+      <span> <i class="fa fa-star-half-o"></i>4.7/5</span>
+      <p>
+        DevOps training emphasizes on integrating development, operations,
+        automation, and continuous delivery collaboration.
+      </p>
+      <button
+        class="c"
+        style="
+          padding: 10px 30px;
+          border: 1px solid black;
+          border-radius: 8px;
+          border-color: violet;
+        "
+      >
+        Curriculum
+      </button>
+      <button
+        class="c"
+        style="
+          padding: 10px 30px;
+          border: 1px solid rgb(161, 27, 27);
+          border-radius: 8px;
+        "
+      >
+        Enroll Now
+      </button>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/8fe93764a7.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
